@@ -31,6 +31,7 @@ img {
   overflow: hidden;
   margin: 50px auto;
   width: 600px;
+  cursor: pointer;
 }
 
 .carousel,
@@ -70,5 +71,20 @@ img {
   right: -5px;
 }
 
+.carousel .indicator {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  margin-left: -120px;
+}
+
+.carousel .indicator li {
+  float: left;
+  margin: 0 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(235, 145, 27, 0.651);
+}
 
 /* 调试样式 */
