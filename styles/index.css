@@ -1,0 +1,74 @@
+/* 初始化样式 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+/* 预定义样式 */
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+  font-size: 0;
+}
+
+/* 项目样式 */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  margin: 50px auto;
+  width: 600px;
+}
+
+.carousel,
+.carousel .images img {
+  height: 375px;
+}
+
+.carousel .images {
+  position: absolute;
+  width: 4800px;
+  transition: all .3s;
+}
+
+.carousel .images li {
+  float: left;
+}
+
+.carousel .handoff .handoffBtn {
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+  width: 30px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 30px;
+  text-align: center;
+  color: rgba(236, 240, 243, 0.767);
+  background: rgba(231, 235, 20, 0.3);
+  border-radius: 25%;
+}
+
+.carousel .handoff .handoffBtn.left {
+  left: -5px;
+}
+
+.carousel .handoff .handoffBtn.right {
+  right: -5px;
+}
+
+
+/* 调试样式 */
